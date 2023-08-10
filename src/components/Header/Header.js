@@ -9,8 +9,8 @@ const Header = () => {
    return (
       <header>
          <div className="container">
-            <h1>Store</h1>
-
+            <h1>Store </h1>
+            {/* Store value changes */}
             <div className="right-section">
                <div className="cart-count-header">{totalCartCount}</div>
                <svg width="32" height="32" viewBox="0 0 16 16" cursor="pointer">

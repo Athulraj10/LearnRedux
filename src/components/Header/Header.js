@@ -4,7 +4,6 @@ import "./Header.css";
 
 const Header = () => {
    const { cartList = [] } = useSelector((state) => state.cart);
-
    const totalCartCount = cartList.reduce((acc, value) => (acc += value.count), 0);
 
    return (

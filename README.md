@@ -19,3 +19,5 @@ STEP 2 : 'Action' => (For example Onclick or Onchange) in that click reducer wil
 STEP 3 : 'Reducer' => (Based on the 'Action' It will Update the state  )
 STEP 4 : 'Provider' => this is the final process The changes Updated by Reducer then we need to update in the react
 That process will handles by Provider.It will inject to react using Provider
+
+In redux we can create multiple reducer but remember we can only create 1 store

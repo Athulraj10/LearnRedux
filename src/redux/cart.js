@@ -15,4 +15,5 @@ const cartSlice=createSlice({
     }
 })
 export const {increment,decrement,addToCart}=cartSlice.actions;
-export default cartSlice.reducer;
+export default cartSlice.reducer;  
+// this cartSLice we are importing to store.js

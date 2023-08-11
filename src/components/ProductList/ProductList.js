@@ -3,12 +3,13 @@ import products from "../../api/products.json";
 import AfterCart from "./CartButtons/AfterCart";
 import BeforeCart from "./CartButtons/BeforeCart";
 import { useSelector,useDispatch } from "react-redux";
-import "./ProductList.css";
 import CartButtons from "./CartButtons";
+import "./ProductList.css";
 
 const   ProductList = () => {
-   const { cartList } = useSelector((state) => state.cart);
-   
+   const  {cartCount,cartList}  = useSelector((state) => state.cart);
+   console.log('cartCOunt' , cartCount)
+   console.log('cartlist' , cartList)
 
    return (
       <section className="container">

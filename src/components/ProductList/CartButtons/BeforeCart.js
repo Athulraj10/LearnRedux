@@ -5,11 +5,12 @@ import { addToCart } from "../../../redux/cart";
 import { CartContext } from "../../../context/cart/cartContext";
 
 const BeforeCart = ({ product }) => {
-   const { addToCart } = useContext(CartContext);
+   const dispatch=useDispatch()
+
 
    return (
       <div className="before-cart">
-         <button className="add-cart-button" onClick={() => addToCart(product)}>
+         <button className="add-cart-button" onClick={() => dispatch(product)}>
             Add to cart
          </button>
       </div>

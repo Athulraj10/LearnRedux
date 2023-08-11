@@ -8,9 +8,7 @@ import "./ProductList.css";
 
 const   ProductList = () => {
    const  {cartCount,cartList}  = useSelector((state) => state.cart);
-   console.log('cartCOunt' , cartCount)
-   console.log('cartlist' , cartList)
-
+  
    return (
       <section className="container">
          {products?.map((product, key) => (

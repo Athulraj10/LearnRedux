@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import "./ProductList.css";
 import CartButtons from "./CartButtons";
 
-const ProductList = () => {
+const   ProductList = () => {
    const { cartList } = useSelector((state) => state.cart);
 
    console.log(cartList);
